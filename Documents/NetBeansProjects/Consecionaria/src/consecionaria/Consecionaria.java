@@ -7,19 +7,19 @@ import java.util.Arrays;
 public class Consecionaria {
 
     public static void main(String[] args) {
-        Autos auto1[] = new Autos[4];
+        Autos[] vehiculos = new Autos[4];
 
-        auto1[0] = new Autos("Peugeot", "206", 4, 200000);
-        auto1[1] = new Motos("Honda", "Titan", 0, 60000, 125);
-        auto1[2] = new Autos("Peugeot", "208", 5, 250000);
-        auto1[3] = new Motos("Yamaha", "YBR", 0, 80500.50, 160);
-        imprimeArray(auto1);
+        vehiculos[0] = new Autos("Peugeot", "206", 4, 200000);
+        vehiculos[1] = new Motos("Honda", "Titan", 0, 60000, 125);
+        vehiculos[2] = new Autos("Peugeot", "208", 5, 250000);
+        vehiculos[3] = new Motos("Yamaha", "YBR", 0, 80500.50, 160);
+        imprimeArray(vehiculos);
         System.out.println("=============================");
-        menormayor(auto1, 0, "", "");
-        contiene(auto1,"","",(double)0);
+        menormayor(vehiculos, 0, "", "");
+        contiene(vehiculos,"","",(double)0);
         System.out.println("=============================");
-        Arrays.sort(auto1);
-        for (Autos auto11 : auto1) {
+        Arrays.sort(vehiculos);
+        for (Autos auto11 : vehiculos) {
             System.out.println(auto11.getMarca() + " " + auto11.getModelo());
         }
       
